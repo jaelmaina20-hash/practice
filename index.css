@@ -1,0 +1,17 @@
+/* basic syntax of css*/
+/* selector {property:value;} */
+
+p{ background-color: black;
+color: aliceblue;
+font-family: Georgia, 'Times New Roman', Times, serif;}
+/*Types of selectors*/
+/*universal selector */
+/**/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:pink;
+
+}
+

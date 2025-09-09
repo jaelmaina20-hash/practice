@@ -10,7 +10,8 @@
     <form action="/submit" method="post">
     <!--form elements go here-->
     <label for="username">Username</label>
-    <input type="text" name="" id="Username" required pattern="[A-Za-z] {4,10}" title="username mustbe 4-10 letters">
+    <input type="text" name="username" id="username" required pattern="[A-Za-z]{4,10}" title="username mustbe 4-10 letters"> <!--in the required pattern,Correct regex: pattern="[A-Za-z]{4,10}"
+→ This means “only letters, between 4 and 10 characters long-->
     <label for="email">Email</label>
     <input type="email" name="email" required>
     <label for="password">Password</label>
@@ -21,7 +22,7 @@
     <h3>Gender:</h3>
     <label for="male">Male</label>
     <input type="radio" name="gender" id="male" value="male">
-    <label for="male">female</label>
+    <label for="female">Female</label>
     <input type="radio" name="gender" id="female" value="female">
     <!--checkboxes-->
     <h3>Interests</h3>
@@ -34,7 +35,7 @@
     <!--select dropdown-->
     <label for="country">Country</label>
     <select name="country" id="country">
-    <option value="">Select a country</option>
+    <option value="">Select a country</option> <!--pre-selection-->
     <option value="morocco">Morocco</option>
     <option value="madagascar">Madagascar</option>
     <option value="ethiopia">Ethiopia</option>
@@ -53,5 +54,6 @@
     <!--color picker-->
     <label for="color">Choose a color</label>
     <input type="color" name="color" id="color"> <br> <br>
+    
 </body>
 </html>
